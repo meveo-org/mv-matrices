@@ -1,0 +1,57 @@
+{
+  "code" : "PricePlan",
+  "name" : "priceplan",
+  "description" : "priceplan",
+  "availableStorages" : [ "SQL" ],
+  "sqlStorageConfiguration" : {
+    "storeAsTable" : true
+  },
+  "samples" : [ ],
+  "audited" : false,
+  "fields" : [ {
+    "code" : "pricelist",
+    "description" : "pricelist",
+    "fieldType" : "DOUBLE",
+    "accountLevel" : "CE_PricePlan",
+    "appliesTo" : "CE_PricePlan",
+    "useInheritedAsDefaultValue" : false,
+    "storageType" : "MATRIX",
+    "valueRequired" : false,
+    "versionable" : false,
+    "triggerEndPeriodEvent" : false,
+    "allowEdit" : true,
+    "hideOnNew" : false,
+    "contentTypes" : [ ],
+    "fileExtensions" : [ ],
+    "saveOnExplorer" : false,
+    "guiPosition" : "tab:priceplan:0;field:0",
+    "identifier" : false,
+    "storages" : [ "SQL" ],
+    "samples" : [ ],
+    "summary" : false,
+    "audited" : false,
+    "persisted" : true,
+    "filter" : false,
+    "unique" : false,
+    "matrixColumns" : [ {
+      "columnUse" : "USE_KEY",
+      "position" : 1,
+      "code" : "zone",
+      "label" : "Zone",
+      "keyType" : "STRING"
+    }, {
+      "columnUse" : "USE_KEY",
+      "position" : 2,
+      "code" : "number_prefix",
+      "label" : "Number prefix",
+      "keyType" : "STRING"
+    }, {
+      "columnUse" : "USE_KEY",
+      "position" : 3,
+      "code" : "age",
+      "label" : "age",
+      "keyType" : "RON"
+    } ]
+  } ],
+  "actions" : [ ]
+}
