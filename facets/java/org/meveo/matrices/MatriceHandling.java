@@ -1,13 +1,15 @@
 package org.meveo.matrices;
 
 import java.util.Map;
-
+import javax.inject.Inject;
 import org.meveo.service.script.Script;
 import org.meveo.admin.exception.BusinessException;
 import org.meveo.api.exception.BusinessApiException;
 import org.meveo.model.storage.Repository;
 import org.meveo.service.storage.RepositoryService;
 import org.meveo.api.persistence.CrossStorageApi;
+import org.meveo.model.customEntities.MeveoMatrix;
+import org.meveo.model.customEntities.PricePlan;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
