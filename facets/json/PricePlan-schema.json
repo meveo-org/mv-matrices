@@ -1,0 +1,23 @@
+{
+    "storages": ["SQL"],
+    "default": "priceplan",
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "id": "PricePlan",
+    "title": "priceplan",
+    "type": "object",
+    "properties": {"pricelist": {
+        "storages": ["SQL"],
+        "patternProperties": {"^.*$": {
+            "id": "CE_PricePlan_pricelist_item",
+            "title": "PricePlan.pricelist item",
+            "type": "number"
+        }},
+        "nullable": true,
+        "description": "pricelist",
+        "readOnly": false,
+        "versionable": false,
+        "id": "CE_PricePlan_pricelist",
+        "title": "PricePlan.pricelist",
+        "type": "object"
+    }}
+}
